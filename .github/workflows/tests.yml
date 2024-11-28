@@ -28,5 +28,6 @@ jobs:
   Tests:
     uses: inveniosoftware/workflows/.github/workflows/tests-python.yml@master
     with:
+      extras: tests,sentry_sdk
       db-service: '[""]'
       search-service: '[""]'
